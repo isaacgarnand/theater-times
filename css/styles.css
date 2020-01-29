@@ -5,3 +5,7 @@ body {
 .well {
   text-align: center;
 }
+
+#output {
+  display: none;
+}

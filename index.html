@@ -13,79 +13,22 @@
     <div class="well">
       <h1>The Big Theater</h1>
     </div>
-    <form id="movieselect">
-      <h2>Aladdin</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="aladdin" value=900>
-          9:00 am (matinee)
-        </label>
+    <form id="input">
+      <select name="movie" id="movie" class="form-control">
+        <option value="aladdin">Aladdin</option>
+        <option value="diehard">Die Hard</option>
+        <option value="lost">Lost in Space</option>
+      </select>
+      <select name="time" id="time" class="form-control">
+        <option value="matenee">3:30 PM</option>
+        <option value="evening">6:00 PM</option>
+      </select>
+      <div class="form-group">
+        <label for="age">Enter Your Age:</label>
+        <input type="text" id="age">
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="aladdin" value=1500>
-          3:00 pm
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="aladdin" value=1800>
-          6:00 pm
-        </label>
-      </div>
-      <h2>Die hard</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="diehard" value=1000>
-          10:00 am (matinee)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="diehard" value=1600>
-          4:00 pm
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="diehard" value=1900>
-          7:00 pm
-        </label>
-      </div>
-      <h2>Lost in Paradise</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="lost" value=1030>
-          10:30 am (matinee)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="lost" value=1550>
-          3:50 pm
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="lost" value=1950>
-          6:50 pm
-        </label>
-      </div>
-    <h2>Do any of these apply to you?</h2>
-    <div class="radio">
-      <label>
-        <input type="radio" name="age" value="ageunder">
-        I am under 17.
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="age" value="ageover">
-        I am over 60.
-      </label>
-    </div>
+      <button type="submit">Purchase tickets!</button>
     </form>
-    <button class= "submit">Get Tickets</button>
     <div id="output">
       
     </div>
